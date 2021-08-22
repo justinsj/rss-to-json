@@ -35,7 +35,7 @@ export default async (url: string, config: AxiosRequestConfig) => {
         let media = {};
 
         let obj = {
-            id: val.guid && val.guid.$t ? val.guid.$t : val.id,
+            id: val.guid && val.guid.$t ? val.guid.$t : (val.guid ? val.guid : (val.id)),
             title: val.title && val.title.$text ? val.title.$text : val.title,
             description: val.summary && val.summary.$text ? val.summary.$text : val.description,
             link: val.link && val.link.href ? val.link.href : val.link,
