@@ -1,5 +1,5 @@
 {
-  "name": "rss-to-json",
+  "name": "medium-rss-to-json",
   "version": "2.0.2",
   "description": "Rss to Json: RSS and Atom feed generator for Node.js",
   "main": "./dist/index.js",
